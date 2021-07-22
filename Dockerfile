@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt update && apt -y upgrade
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
-RUN apt install -y npm sqlite3 git nodejs multimon-ng rtl-sdr libusb-1.0-0-dev
+RUN apt install -y npm sqlite3 git nodejs multimon-ng rtl-sdr libusb-1.0-0-dev nano
 RUN npm install npm@latest -g
 RUN npm install pm2 -g
 RUN git clone https://github.com/pagermon/pagermon.git
